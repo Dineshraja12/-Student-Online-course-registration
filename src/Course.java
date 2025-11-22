@@ -1,20 +1,20 @@
+import jakarta.persistence.*;
+
+@Entity
 public class Course {
+
+    @Id
     private String courseId;
-    private String courseName;
+
+    private String name;
     private int seats;
 
-    public Course(String courseId, String courseName, int seats) {
+    public Course() {}
+
+    public Course(String courseId, String name, int seats) {
         this.courseId = courseId;
-        this.courseName = courseName;
+        this.name = name;
         this.seats = seats;
-    }
-
-    public String getCourseId() {
-        return courseId;
-    }
-
-    public String getCourseName() {
-        return courseName;
     }
 
     public boolean register() {
@@ -27,6 +27,6 @@ public class Course {
 
     @Override
     public String toString() {
-        return courseId + " - " + courseName + " (Seats: " + seats + ")";
+        return courseId + " - " + name + " (Seats: " + seats + ")";
     }
 }
