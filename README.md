@@ -33,21 +33,6 @@ Simple Console Interface
 
 ---
 
-📁 Project Structure
-
-CourseRegistration/
- ├── src/
- │    ├── hibernate.cfg.xml
- │    ├── Course.java
- │    ├── Student.java
- │    ├── Registration.java
- │    ├── HibernateUtil.java
- │    └── Main.java
- └── README.md
-
-
----
-
 🛠 Technologies Used
 
 Java 17+
